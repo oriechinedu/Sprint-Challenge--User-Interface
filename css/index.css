@@ -214,6 +214,10 @@ footer nav a {
     flex-direction: column;
     border-bottom: 1px dashed black;
     margin: 20px 0;
+    
+}
+.about-box img {
+    object-fit: cover;
 }
 .about-box h2 {
     margin-top: 10px;
@@ -234,4 +238,37 @@ footer nav a {
 }
 .about-bottom-section{
     padding: 2rem 0.7rem;
+}
+
+@media (max-width: 500px) {
+    .navigation {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar a {
+        margin: 0;
+    }
+    .logo-container {
+        align-self: center;
+    }
+    .top-content .text-container {
+        width: 100%;
+    }
+    .container{
+        padding: 20px;
+    }
+    header img {
+        width: 99%;
+    }
+    header {
+        margin: 20px;
+    }
+    .about-box {
+        width: 100%;
+    }
+    
 }
