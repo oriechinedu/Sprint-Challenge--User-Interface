@@ -70,7 +70,30 @@ p {
     width: 800px;
     margin: 0 auto;
 }
-
+.navigation {
+    display: flex;
+    padding: 30px 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  .navbar a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgb(73, 69, 69);
+  }
+  .logo {
+      padding: 10px 10px 10px 0;
+  }
+  header {
+      margin-bottom: 30px;
+  }
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +127,7 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    /* background: black; */
     margin: 20px 2.5%;
     color: white;
     display: flex;
@@ -143,4 +166,109 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.box-1{
+    background-color: teal;
+}
+.box-2{
+    background-color: gold;
+}
+.box-3{
+    background-color: cadetblue;
+}
+.box-4{
+    background-color: coral;
+}
+.box-5{
+    background-color: crimson;
+}
+.box-6{
+    background-color: forestgreen;
+}
+.box-7{
+    background-color: darkorchid;
+}
+.box-8{
+    background-color: hotpink;
+}
+.box-9{
+    background-color: indigo;
+}
+.box-10{
+    background-color: dodgerblue;
+}
+.top-content-text {
+    padding: 0 0 20px 20px;
+}
+.about-middle-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.about-box {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px dashed black;
+    margin: 20px 0;
+    
+}
+.about-box img {
+    object-fit: cover;
+}
+.about-box h2 {
+    margin-top: 10px;
+}
+.learn-more {
+    border: 1px solid black;
+    width: max-content;
+    padding: 6px 15px;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.learn-more:hover {
+    background-color: antiquewhite;
+    transform: scale(1.1);
+}
+.about-bottom-section{
+    padding: 2rem 0.7rem;
+}
+
+@media (max-width: 500px) {
+    .navigation {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar a {
+        margin: 0;
+    }
+    .logo-container {
+        align-self: center;
+    }
+    .top-content .text-container {
+        width: 100%;
+    }
+    .container{
+        padding: 20px;
+    }
+    header img {
+        width: 99%;
+    }
+    header {
+        margin: 20px;
+    }
+    .about-box {
+        width: 100%;
+    }
+    
 }
